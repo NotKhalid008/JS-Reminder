@@ -1,0 +1,46 @@
+body {
+    background-color: #333;
+}
+.container{
+    background-color: #333;
+}
+#inptfld {
+    border: solid 5px black;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+}
+#timefld {
+    border: solid 5px black;
+    border-radius: 10px;
+    width: 208px;
+    height: 50px;
+}
+.output {
+    background-color: rgb(116, 113, 113);
+    width: 290px;
+    height: 540px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.output2 {
+    background-color: rgb(116, 113, 113);
+    width: 200px;
+    height: 540px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.items {
+    display: flex;
+}
+.list {
+    font-family: sans-serif;
+}
+.btn {
+    width: 25px;
+    height: 25px;
+    float: right;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
