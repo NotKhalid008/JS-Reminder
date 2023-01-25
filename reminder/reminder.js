@@ -1,63 +1,7 @@
 var go1 = document.getElementById("btn1c");
+var mytime1 = document.querySelector("#btn1c")
 
-go1.addEventListener("click", function() {
-  var myVal = document.getElementById("inptfld").value;
-   document.getElementById("one").textContent = myVal;
-})
-
-var go2 = document.getElementById("btn2c");
-
-go2.addEventListener("click", function() {
-  var myVal = document.getElementById("inptfld").value;
-   document.getElementById("two").textContent = myVal;
-})
-
-var go3 = document.getElementById("btn3c");
-
-go3.addEventListener("click", function() {
-  var myVal = document.getElementById("inptfld").value;
-   document.getElementById("three").textContent = myVal;
-})
-
-var go4 = document.getElementById("btn4c");
-
-go4.addEventListener("click", function() {
-  var myVal = document.getElementById("inptfld").value;
-   document.getElementById("four").textContent = myVal;
-})
-
-var go5 = document.getElementById("btn5c");
-
-go5.addEventListener("click", function() {
-  var myVal = document.getElementById("inptfld").value;
-   document.getElementById("five").textContent = myVal;
-})
-
-var go6 = document.getElementById("btn6c");
-
-go6.addEventListener("click", function() {
-  var myVal = document.getElementById("inptfld").value;
-   document.getElementById("six").textContent = myVal;
-})
-
-var go7 = document.getElementById("btn7c");
-
-go7.addEventListener("click", function() {
-  var myVal = document.getElementById("inptfld").value;
-   document.getElementById("seven").textContent = myVal;
-})
-
-var go8 = document.getElementById("btn8c");
-
-go8.addEventListener("click", function() {
-  var myVal = document.getElementById("inptfld").value;
-   document.getElementById("eight").textContent = myVal;
-})
-
-
-var time1 = document.getElementById("timebtn1");
-
-time1.addEventListener("click", function() {
+mytime1.addEventListener("click", function() {
   var getNum = document.getElementById("timefld").value;
   console.log(getNum)
   var timer = setInterval (() => {
@@ -69,8 +13,13 @@ time1.addEventListener("click", function() {
       document.getElementById("one").innerHTML = "done";
       clearInterval(timer)
     }
-  }, 1000)
-  var can1 = document.getElementById("btn1b")
+    if (document.getElementById("timefld").value === "")
+    {
+      document.getElementById("time1").innerHTML = "enter time"
+      document.getElementById("one").innerHTML = document.getElementById("inptfld").value;
+    }
+}, 1000)
+var can1 = document.getElementById("btn1b")
 
 can1.addEventListener("click", function() {
   document.getElementById("one").innerHTML = "";
@@ -78,10 +27,19 @@ can1.addEventListener("click", function() {
   document.querySelector('#time1').innerHTML = "";
 })
 })
+go1.addEventListener("click", function() {
+  var myVal = document.getElementById("inptfld").value;
+   document.getElementById("one").textContent = myVal;
+   if (document.getElementById("inptfld").value === "")
+   {
+    document.getElementById("one").innerHTML = "enter text"
+   }
+})
 
-var time2 = document.getElementById("timebtn2");
+var go2 = document.getElementById("btn2c");
+var mytime2 = document.querySelector("#btn2c")
 
-time2.addEventListener("click", function() {
+mytime2.addEventListener("click", function() {
   var getNum2 = document.getElementById("timefld").value;
   console.log(getNum2)
   var timer2 = setInterval (() => {
@@ -93,6 +51,11 @@ time2.addEventListener("click", function() {
       document.getElementById("two").innerHTML = "done";
       clearInterval(timer2)
     }
+    if (document.getElementById("timefld").value === "")
+    {
+      document.getElementById("time2").innerHTML = "enter time"
+      document.getElementById("two").innerHTML = document.getElementById("inptfld").value;
+    }
   }, 1000)
   var can2 = document.getElementById("btn2b")
 
@@ -102,10 +65,19 @@ can2.addEventListener("click", function() {
   document.querySelector('#time2').innerHTML = "";
 })
 })
+go2.addEventListener("click", function() {
+  var myVal = document.getElementById("inptfld").value;
+   document.getElementById("two").textContent = myVal;
+   if (document.getElementById("inptfld").value === "")
+   {
+    document.getElementById("two").innerHTML = "enter text"
+   }
+})
 
-var time3 = document.getElementById("timebtn3");
+var go3 = document.getElementById("btn3c")
+var mytime3 = document.querySelector("#btn3c")
 
-time3.addEventListener("click", function() {
+mytime3.addEventListener("click", function() {
   var getNum3 = document.getElementById("timefld").value;
   console.log(getNum3)
   var timer3 = setInterval (() => {
@@ -117,6 +89,11 @@ time3.addEventListener("click", function() {
       document.getElementById("three").innerHTML = "done";
       clearInterval(timer3)
     }
+    if (document.getElementById("timefld").value === "")
+    {
+      document.getElementById("time3").innerHTML = "enter time"
+      document.getElementById("three").innerHTML = document.getElementById("inptfld").value;
+    }
   }, 1000)
   var can3 = document.getElementById("btn3b")
 
@@ -127,9 +104,19 @@ can3.addEventListener("click", function() {
 })
 })
 
-var time4 = document.getElementById("timebtn4");
+go3.addEventListener("click", function() {
+  var myVal = document.getElementById("inptfld").value;
+   document.getElementById("three").textContent = myVal;
+   if (document.getElementById("inptfld").value === "")
+   {
+    document.getElementById("three").innerHTML = "enter text"
+   }
+})
 
-time4.addEventListener("click", function() {
+var go4 = document.getElementById("btn4c");
+var mytime4 = document.querySelector("#btn4c")
+
+mytime4.addEventListener("click", function() {
   var getNum4 = document.getElementById("timefld").value;
   console.log(getNum4)
   var timer4 = setInterval (() => {
@@ -141,18 +128,33 @@ time4.addEventListener("click", function() {
       document.getElementById("four").innerHTML = "done";
       clearInterval(timer4)
     }
+    if (document.getElementById("timefld").value === "")
+    {
+      document.getElementById("time4").innerHTML = "enter time"
+      document.getElementById("four").innerHTML = document.getElementById("inptfld").value;
+    }
   }, 1000)
   var can4 = document.getElementById("btn4b")
 
-can4.addEventListener("click", function() {
-  document.getElementById("four").innerHTML = "";
-  resetBtn = clearInterval(timer4)
-  document.querySelector('#time4').innerHTML = "";
+  can4.addEventListener("click", function() {
+    document.getElementById("four").innerHTML = "";
+    resetBtn = clearInterval(timer4)
+    document.querySelector('#time4').innerHTML = "";
+  })
 })
+go4.addEventListener("click", function() {
+  var myVal = document.getElementById("inptfld").value;
+   document.getElementById("four").textContent = myVal;
+   if (document.getElementById("inptfld").value === "")
+   {
+    document.getElementById("four").innerHTML = "enter text"
+   }
 })
-var time5 = document.getElementById("timebtn6");
 
-time5.addEventListener("click", function() {
+var go5 = document.getElementById("btn5c");
+var mytime5 = document.querySelector("#btn5c")
+
+mytime5.addEventListener("click", function() {
   var getNum5 = document.getElementById("timefld").value;
   console.log(getNum5)
   var timer5 = setInterval (() => {
@@ -164,19 +166,33 @@ time5.addEventListener("click", function() {
       document.getElementById("five").innerHTML = "done";
       clearInterval(timer5)
     }
+    if (document.getElementById("timefld").value === "")
+    {
+      document.getElementById("time5").innerHTML = "enter time"
+      document.getElementById("five").innerHTML = document.getElementById("inptfld").value;
+    }
   }, 1000)
   var can5 = document.getElementById("btn5b")
 
-can5.addEventListener("click", function() {
-  document.getElementById("five").innerHTML = "";
-  resetBtn = clearInterval(timer5)
-  document.querySelector('#time5').innerHTML = "";
+  can5.addEventListener("click", function() {
+    document.getElementById("five").innerHTML = "";
+    resetBtn = clearInterval(timer5)
+    document.querySelector('#time5').innerHTML = "";
+  })
 })
+go5.addEventListener("click", function() {
+  var myVal = document.getElementById("inptfld").value;
+   document.getElementById("five").textContent = myVal;
+   if (document.getElementById("inptfld").value === "")
+   {
+    document.getElementById("five").innerHTML = "enter text"
+   }
 })
 
-var time6 = document.getElementById("timebtn6");
+var go6 = document.getElementById("btn6c");
+var mytime6 = document.querySelector("#btn6c")
 
-time6.addEventListener("click", function() {
+mytime6.addEventListener("click", function() {
   var getNum6 = document.getElementById("timefld").value;
   console.log(getNum6)
   var timer6 = setInterval (() => {
@@ -188,19 +204,33 @@ time6.addEventListener("click", function() {
       document.getElementById("six").innerHTML = "done";
       clearInterval(timer6)
     }
+    if (document.getElementById("timefld").value === "")
+    {
+      document.getElementById("time6").innerHTML = "enter time"
+      document.getElementById("six").innerHTML = document.getElementById("inptfld").value;
+    }
   }, 1000)
   var can6 = document.getElementById("btn6b")
 
-can6.addEventListener("click", function() {
-  document.getElementById("six").innerHTML = "";
-  resetBtn = clearInterval(timer6)
-  document.querySelector('#time6').innerHTML = "";
+  can6.addEventListener("click", function() {
+    document.getElementById("six").innerHTML = "";
+    resetBtn = clearInterval(timer6)
+    document.querySelector('#time6').innerHTML = "";
+  })
 })
+go6.addEventListener("click", function() {
+  var myVal = document.getElementById("inptfld").value;
+   document.getElementById("six").textContent = myVal;
+   if (document.getElementById("inptfld").value === "")
+   {
+    document.getElementById("six").innerHTML = "enter text"
+   }
 })
 
-var time7 = document.getElementById("timebtn7");
+var go7 = document.getElementById("btn7c");
+var mytime7 = document.querySelector("#btn7c")
 
-time7.addEventListener("click", function() {
+mytime7.addEventListener("click", function() {
   var getNum7 = document.getElementById("timefld").value;
   console.log(getNum7)
   var timer7 = setInterval (() => {
@@ -212,19 +242,33 @@ time7.addEventListener("click", function() {
       document.getElementById("seven").innerHTML = "done";
       clearInterval(timer7)
     }
+    if (document.getElementById("timefld").value === "")
+    {
+      document.getElementById("time7").innerHTML = "enter time"
+      document.getElementById("seven").innerHTML = document.getElementById("inptfld").value;
+    }
   }, 1000)
   var can7 = document.getElementById("btn7b")
 
-can7.addEventListener("click", function() {
-  document.getElementById("seven").innerHTML = "";
-  resetBtn = clearInterval(timer7)
-  document.querySelector('#time7').innerHTML = "";
+  can7.addEventListener("click", function() {
+    document.getElementById("seven").innerHTML = "";
+    resetBtn = clearInterval(timer7)
+    document.querySelector('#time7').innerHTML = "";
+  })
 })
+go7.addEventListener("click", function() {
+  var myVal = document.getElementById("inptfld").value;
+   document.getElementById("seven").textContent = myVal;
+   if (document.getElementById("inptfld").value === "")
+   {
+    document.getElementById("seven").innerHTML = "enter text"
+   }
 })
 
-var time8 = document.getElementById("timebtn8");
+var go8 = document.getElementById("btn8c");
+var mytime8 = document.querySelector("#btn8c")
 
-time8.addEventListener("click", function() {
+mytime8.addEventListener("click", function() {
   var getNum8 = document.getElementById("timefld").value;
   console.log(getNum8)
   var timer8 = setInterval (() => {
@@ -236,12 +280,25 @@ time8.addEventListener("click", function() {
       document.getElementById("eight").innerHTML = "done";
       clearInterval(timer8)
     }
+    if (document.getElementById("timefld").value === "")
+    {
+      document.getElementById("time8").innerHTML = "enter time"
+      document.getElementById("eight").innerHTML = document.getElementById("inptfld").value;
+    }
   }, 1000)
   var can8 = document.getElementById("btn8b")
 
-can8.addEventListener("click", function() {
-  document.getElementById("eight").innerHTML = "";
-  resetBtn = clearInterval(timer8)
-  document.querySelector('#time8').innerHTML = "";
+  can8.addEventListener("click", function() {
+    document.getElementById("eight").innerHTML = "";
+    resetBtn = clearInterval(timer8)
+    document.querySelector('#time8').innerHTML = "";
+  })
 })
+go8.addEventListener("click", function() {
+  var myVal = document.getElementById("inptfld").value;
+   document.getElementById("eight").textContent = myVal;
+   if (document.getElementById("inptfld").value === "")
+   {
+    document.getElementById("eight").innerHTML = "enter text"
+   }
 })
