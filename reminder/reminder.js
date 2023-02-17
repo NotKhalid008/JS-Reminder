@@ -1,5 +1,5 @@
-var go1 = document.getElementById("btn1c");
-var mytime1 = document.querySelector("#btn1c")
+var go1 = document.getElementById("go1");
+var mytime1 = document.querySelector("#go1")
 
 mytime1.addEventListener("click", function() {
   var getNum = document.getElementById("timefld").value;
@@ -19,7 +19,7 @@ mytime1.addEventListener("click", function() {
       document.getElementById("one").innerHTML = document.getElementById("inptfld").value;
     }
 }, 1000)
-var can1 = document.getElementById("btn1b")
+var can1 = document.getElementById("can1")
 
 can1.addEventListener("click", function() {
   document.getElementById("one").innerHTML = "";
@@ -36,8 +36,8 @@ go1.addEventListener("click", function() {
    }
 })
 
-var go2 = document.getElementById("btn2c");
-var mytime2 = document.querySelector("#btn2c")
+var go2 = document.getElementById("go2");
+var mytime2 = document.querySelector("#go2")
 
 mytime2.addEventListener("click", function() {
   var getNum2 = document.getElementById("timefld").value;
@@ -57,7 +57,7 @@ mytime2.addEventListener("click", function() {
       document.getElementById("two").innerHTML = document.getElementById("inptfld").value;
     }
   }, 1000)
-  var can2 = document.getElementById("btn2b")
+  var can2 = document.getElementById("can2")
 
 can2.addEventListener("click", function() {
   document.getElementById("two").innerHTML = "";
@@ -74,8 +74,8 @@ go2.addEventListener("click", function() {
    }
 })
 
-var go3 = document.getElementById("btn3c")
-var mytime3 = document.querySelector("#btn3c")
+var go3 = document.getElementById("go3")
+var mytime3 = document.querySelector("#go3")
 
 mytime3.addEventListener("click", function() {
   var getNum3 = document.getElementById("timefld").value;
@@ -95,7 +95,7 @@ mytime3.addEventListener("click", function() {
       document.getElementById("three").innerHTML = document.getElementById("inptfld").value;
     }
   }, 1000)
-  var can3 = document.getElementById("btn3b")
+  var can3 = document.getElementById("can3")
 
 can3.addEventListener("click", function() {
   document.getElementById("three").innerHTML = "";
@@ -113,8 +113,8 @@ go3.addEventListener("click", function() {
    }
 })
 
-var go4 = document.getElementById("btn4c");
-var mytime4 = document.querySelector("#btn4c")
+var go4 = document.getElementById("go4");
+var mytime4 = document.querySelector("#go4")
 
 mytime4.addEventListener("click", function() {
   var getNum4 = document.getElementById("timefld").value;
@@ -134,7 +134,7 @@ mytime4.addEventListener("click", function() {
       document.getElementById("four").innerHTML = document.getElementById("inptfld").value;
     }
   }, 1000)
-  var can4 = document.getElementById("btn4b")
+  var can4 = document.getElementById("can4")
 
   can4.addEventListener("click", function() {
     document.getElementById("four").innerHTML = "";
@@ -151,8 +151,8 @@ go4.addEventListener("click", function() {
    }
 })
 
-var go5 = document.getElementById("btn5c");
-var mytime5 = document.querySelector("#btn5c")
+var go5 = document.getElementById("go5");
+var mytime5 = document.querySelector("#go5")
 
 mytime5.addEventListener("click", function() {
   var getNum5 = document.getElementById("timefld").value;
@@ -172,7 +172,7 @@ mytime5.addEventListener("click", function() {
       document.getElementById("five").innerHTML = document.getElementById("inptfld").value;
     }
   }, 1000)
-  var can5 = document.getElementById("btn5b")
+  var can5 = document.getElementById("can5")
 
   can5.addEventListener("click", function() {
     document.getElementById("five").innerHTML = "";
@@ -189,8 +189,8 @@ go5.addEventListener("click", function() {
    }
 })
 
-var go6 = document.getElementById("btn6c");
-var mytime6 = document.querySelector("#btn6c")
+var go6 = document.getElementById("go6");
+var mytime6 = document.querySelector("#go6")
 
 mytime6.addEventListener("click", function() {
   var getNum6 = document.getElementById("timefld").value;
@@ -210,7 +210,7 @@ mytime6.addEventListener("click", function() {
       document.getElementById("six").innerHTML = document.getElementById("inptfld").value;
     }
   }, 1000)
-  var can6 = document.getElementById("btn6b")
+  var can6 = document.getElementById("can6")
 
   can6.addEventListener("click", function() {
     document.getElementById("six").innerHTML = "";
@@ -227,8 +227,8 @@ go6.addEventListener("click", function() {
    }
 })
 
-var go7 = document.getElementById("btn7c");
-var mytime7 = document.querySelector("#btn7c")
+var go7 = document.getElementById("go7");
+var mytime7 = document.querySelector("#go7")
 
 mytime7.addEventListener("click", function() {
   var getNum7 = document.getElementById("timefld").value;
@@ -248,7 +248,7 @@ mytime7.addEventListener("click", function() {
       document.getElementById("seven").innerHTML = document.getElementById("inptfld").value;
     }
   }, 1000)
-  var can7 = document.getElementById("btn7b")
+  var can7 = document.getElementById("can7")
 
   can7.addEventListener("click", function() {
     document.getElementById("seven").innerHTML = "";
@@ -265,8 +265,8 @@ go7.addEventListener("click", function() {
    }
 })
 
-var go8 = document.getElementById("btn8c");
-var mytime8 = document.querySelector("#btn8c")
+var go8 = document.getElementById("go8");
+var mytime8 = document.querySelector("#go8")
 
 mytime8.addEventListener("click", function() {
   var getNum8 = document.getElementById("timefld").value;
@@ -286,7 +286,7 @@ mytime8.addEventListener("click", function() {
       document.getElementById("eight").innerHTML = document.getElementById("inptfld").value;
     }
   }, 1000)
-  var can8 = document.getElementById("btn8b")
+  var can8 = document.getElementById("can8")
 
   can8.addEventListener("click", function() {
     document.getElementById("eight").innerHTML = "";
