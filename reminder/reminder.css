@@ -43,4 +43,18 @@ body {
     border-radius: 5px;
     float: right;
     cursor: pointer;
+    padding-left: 4px;
+}
+.btndiv {
+    background-color: rgb(145, 140, 140); 
+    border-radius: 5px; 
+    height: 43px; 
+    width: 220px;
+}
+.timer {
+    background-color: rgb(145, 140, 140); 
+    height: 43px; 
+    width: 150px;
+    border-radius: 5px; 
+    list-style: none;
 }
